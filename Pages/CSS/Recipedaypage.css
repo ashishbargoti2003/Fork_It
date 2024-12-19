@@ -1,0 +1,18 @@
+/* Assuming navbar height is 60px, adjust as needed */
+.recipe-day-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align the content at the top */
+  height: calc(100vh - 60px); /* Subtract the navbar height */
+  padding-top: 40px; /* Optional padding to give space after the navbar */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.recipe-day-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Dark text color */
+}
+
+/* Additional styles for RecipeBook if needed can be added here */

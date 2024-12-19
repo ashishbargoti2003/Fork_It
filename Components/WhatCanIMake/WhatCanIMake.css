@@ -1,0 +1,63 @@
+
+.scrollable-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add some padding for better visibility */
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Optional: add a border around the scrollable area */
+    padding: 10px; /* Optional: add padding inside the scrollable area */
+}
+
+.alternative-list {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding for better alignment */
+}
+
+.alternative-item {
+    border-bottom: 1px solid #ccc; /* Add a separator between items */
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+.swap-background {
+    background-color: #f0f0f0; /* Add a light background color */
+    min-height: 100vh; /* Ensure the component takes full height of the viewport */
+}
+
+.swap-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.swap-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.swap-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.swap-button:disabled {
+    background-color: #ccc;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.swap-alternatives {
+    margin-top: 20px;
+}

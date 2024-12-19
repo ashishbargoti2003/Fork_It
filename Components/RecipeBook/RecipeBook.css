@@ -1,0 +1,153 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main Container */
+  .recipe-page {
+    display: flex;
+    flex-direction: column; /* Stacks the recipe and ingredients/nutrition below */
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Recipe Content (Title, Description, Image) */
+  .recipe-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px; /* Space between content and Ingredients/Nutrition section */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    max-width: 45%; /* Keeps some balance between the left and right */
+    padding: 20px;
+    margin-top: -20px; /* Adjusted to move title/description down */
+  }
+  
+  .recipe-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .order-now-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-now-btn:hover {
+    background-color: #e76f51;
+  }
+  
+  /* Right Section (Image) */
+  .right-section {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Ingredients and Nutrition Section */
+  .ingredients-nutrition-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the ingredients and nutrition section */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%; /* Ensures the section doesn't stretch full width */
+    margin-top: 40px; /* Spacing between content and ingredients section */
+  }
+  
+  .ingredients-section,
+  .nutrition-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .ingredients-section h2,
+  .nutrition-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .ingredients-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .ingredients-section ul li {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .nutrition-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .nutrition-section table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .nutrition-section table td:first-child {
+    font-weight: bold;
+  }
+  
+  .nutrition-section table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Video Section */
+  .video-section {
+    width: 100%;
+    margin-top: 40px; /* Spacing between ingredients/nutrition and video */
+    text-align: center;
+  }
+  
+  .video-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    max-width: 100%; /* Ensures the video resizes properly */
+    height: 500px; /* You can adjust this height to your needs */
+  }
+  

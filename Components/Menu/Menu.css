@@ -1,0 +1,96 @@
+/* Menu container (under the background) */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 40px 20px;
+    background-color: #fff;
+    min-height: 100vh; /* Ensure it occupies full viewport height */
+    justify-items: center; /* Center cards horizontally */
+    align-items: center; /* Center cards vertically */
+}
+
+/* Dish card styling */
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 320px;  /* Adjusted width for larger cards */
+    height: 450px; /* Adjusted height for larger cards */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for emphasis */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+/* Image styling */
+.dish-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* Increase image height */
+    object-fit: cover; /* Ensure images fit within their container */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Dish card content */
+.dish-card h3 {
+    font-size: 20px; /* Increased font size */
+    margin: 15px 0 10px; /* Adjusted margin for better balance */
+}
+
+.dish-card p {
+    font-size: 15px; /* Increased font size for description */
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Menu heading styling */
+.menu-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.menu-heading h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Optional: Add some decoration under the heading */
+.menu-heading h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ff3b5c; /* Highlight color */
+    margin: 20px auto 0;
+}
+
+/* Responsive dish card layout */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+
+    .dish-card {
+        width: 280px;  /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    }
+    .dish-card {
+        width: 100%;  /* Full width for very small screens */
+    }
+}

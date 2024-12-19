@@ -1,0 +1,45 @@
+/* Background styling */
+.background {
+    background-image: url('../Assets/background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For overlay effects */
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(22px, -5px); /* Shift right 5px and up 5px */
+}
+
+/* Input styling */
+.search-input {
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background: none;
+    width: 300px;
+    color: #333;
+}
+
+/* Button styling */
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
